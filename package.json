@@ -1,0 +1,50 @@
+{
+  "name": "product_mony",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "run-web": "./node_modules/.bin/webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "apollo-cache-inmemory": "^1.2.5",
+    "apollo-client": "^2.3.5",
+    "apollo-link": "^1.2.2",
+    "apollo-link-http": "^1.5.4",
+    "apollo-link-state": "^0.4.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-react-native-web": "^0.8.8",
+    "babel-polyfill": "^6.26.0",
+    "graphql-tag": "^2.9.2",
+    "patch-package": "^5.1.1",
+    "postinstall-prepare": "^1.0.1",
+    "react": "^16.3.1",
+    "react-apollo": "^2.1.9",
+    "react-dom": "^16.4.1",
+    "react-native": "0.55.4",
+    "react-native-web": "^0.8.8",
+    "react-native-web-responsive": "^1.0.5",
+    "react-navigation": "^1.0.3",
+    "react-navigation-redux-helpers": "^2.0.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "devDependencies": {
+    "babel-jest": "23.2.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.3.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
